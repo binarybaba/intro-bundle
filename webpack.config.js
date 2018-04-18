@@ -9,6 +9,12 @@ module.exports = {
         path: path.join(__dirname, "dist"),
         filename: "bundle.js"
     },
+    devServer: {
+        publicPath: "/dist/",
+        filename: "bundle.js",
+        historyApiFallback: true,
+        overlay: true,
+    },
     module: {
         rules: [{
             enforce: "pre",
@@ -17,6 +23,6 @@ module.exports = {
         }, {
             loader: "babel-loader",
             test: /\.js$/
-        }]
+        }],
     }
 };

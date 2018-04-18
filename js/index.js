@@ -1,5 +1,9 @@
-var angular = window.angular;
+import angular from "angular";
 
-angular.module("app", []);
+import messageController from "./messageController";
+import messageFactory from "./messageFactory";
 
-
+angular.module("app", [])
+    .factory("messageFactory", messageFactory)
+    .controller("messageController", messageController)
+;

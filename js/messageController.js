@@ -1,10 +1,12 @@
-angular.module("app")
-.controller("messageController", ["$scope", "messageFactory", function($scope, MessageF) {
+function messageController($scope, MessageF) {
     MessageF.getMessage()
         .then((response) => {
-            $scope.message = response.data.message;
+        $scope.message = response.data.message;
         })
-}]);
+}
+messageController.$inject = ["$scope", "messageFactory"];
+export default messageController;
+
 class Foo {
     constructor(x) {
         this.x = x;

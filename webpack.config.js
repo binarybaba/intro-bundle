@@ -8,5 +8,15 @@ module.exports = {
     output: {
         path: path.join(__dirname, "dist"),
         filename: "bundle.js"
+    },
+    module: {
+        rules: [{
+            enforce: "pre",
+            loader: "eslint-loader",
+            test: /\.js$/
+        }, {
+            loader: "babel-loader",
+            test: /\.js$/
+        }]
     }
 };

@@ -1,5 +1,9 @@
 {
   "extends": [
     "airbnb/legacy"
-  ]
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module"
+  }
 }

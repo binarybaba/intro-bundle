@@ -1,8 +1,13 @@
 # Intro to Bundling
 
 
-### Dummy Application
+### ESLint
 
-The point of this branch is to demo how usually people code the frontend. The structure of the app is fine for prototyping but not for production.
+Eslint is a tool which goes through your javascript and warns you 
+when you as a developer makes errors.
 
-We'll get there. But first we need to make a prototypal web app.
+Installation:
+```
+yarn add eslint -D
+```
+> Note: the D flag is for development dependency.

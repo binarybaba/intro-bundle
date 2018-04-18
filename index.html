@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro to bundles</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="app">
+<div ng-controller="messageController">
+    <main style="width:100%;">
+        <section>
+            <h1>{{message}}</h1>
+            <input type="text" ng-model="text"/>
+            <p>{{text}}</p>
+        </section>
+    </main>
+</div>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/messageFactory.js"></script>
+<script src="js/messageController.js"></script>
+</body>
+</html>

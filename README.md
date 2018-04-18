@@ -1,5 +1,5 @@
 #Intro to Bundling
-Welcome to the intro to bundling. This is jackass.
+
 
 ### Get NVM
 > Note: You'll need curl.
